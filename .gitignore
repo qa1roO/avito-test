@@ -1,3 +1,5 @@
+
+datasets/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -216,3 +218,25 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local experiment outputs (do not commit generated data)
+artifacts/
+
+# Regenerable retrieval assets: keep the repository source-only.
+/models/
+/experiments/cache/
+/experiments/final_domain/
+/experiments/*.npz
+/experiments/*.npy
+/experiments/*.parquet
+/experiments/*.log
+/experiments/*.cbm
+/experiments/
+/experiments/benchmark_cache/
+/answer_last_attempt.csv
+/answer_baseline_0782.csv
+/answer_lexical_fusion.csv
+
+# Generated submission
+/answer.csv
+/answer_*.csv
